@@ -1,0 +1,18 @@
+# Introduction #
+
+Java US Address parser
+
+
+# Details #
+
+  * Usage samples could be found in JUnit test - com.skovalenko.geocoder.address\_parser.test.UsAddressParserTest
+All addresses below looks weird, but these are valid US Addresses and are parsed correctly :
+
+Sample of usage :
+
+---- ParsedUsAddress pa = parser.parse(new UnparsedAddress("13101 James E Casey Ave", "Englewood", "80112"));
+---- pa = parser.parse(new UnparsedAddress("536 1/2 Michigan St","Evanston","60201"));
+---- pa = parser.parse(new UnparsedAddress("435-IV Commerce Blvd. "," Washington "," 15301"));
+---- pa = parser.parse(new UnparsedAddress("N50W5200 Commerce Blvd. "," Washington "," 15301"));
+---- pa = parser.parse(new UnparsedAddress("2C200 Commerce Blvd. "," Washington "," 15301"));
+---- pa = parser.parse(new UnparsedAddress("12 1/4 A Commerce Blvd. "," Washington "," 15301"));
